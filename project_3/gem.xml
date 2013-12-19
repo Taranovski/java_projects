@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="WINDOWS-1251"?>
+<!--DOCTYPE gems "gem2.xsd"/-->
+<gems>
+  <gem preciousness = "true" name = "Diamond">
+    <origin>Africa</origin>
+    <value>1000</value>
+    <visual_parameters>
+      <color>white</color>
+      <transparency>50</transparency>
+      <sides>16</sides>
+    </visual_parameters>
+  </gem>
+  <gem preciousness = "false" name = "Agat">
+    <origin>Asia</origin>
+    <value>100</value>
+    <visual_parameters>
+      <color>orange</color>
+      <transparency>20</transparency>
+      <sides>6</sides>
+    </visual_parameters>
+  </gem>
+  <gem preciousness = "true" name = "Saphire">
+    <origin>Europe</origin>
+    <value>300</value>
+    <visual_parameters>
+      <color>blue</color>
+      <transparency>80</transparency>
+      <sides>32</sides>
+    </visual_parameters>
+  </gem>
+</gems>

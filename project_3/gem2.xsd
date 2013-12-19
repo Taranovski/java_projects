@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="gems" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="gems" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="gem">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="origin">
+                <!-- restrictions to origin-->
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[A-Z]([a-z])+"/>
+                    <xs:maxLength value="20"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <!--type="xs:string" minOccurs="0" msdata:Ordinal="0" /-->
+              <xs:element name="value">
+                <!-- restrictions to value-->
+                <xs:simpleType>
+                  <xs:restriction base="xs:double">
+                    <xs:minInclusive value='0'/>
+                    <xs:maxInclusive value="1000000"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <!--type="xs:string" minOccurs="0" msdata:Ordinal="2" /-->
+              <xs:element name="visual_parameters">
+                <!--minOccurs="0" maxOccurs="unbounded"-->
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="color">
+                      <!-- restrictions to color-->
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="white"/>
+                          <xs:enumeration value="blue"/>
+                          <xs:enumeration value="red"/>
+                          <xs:enumeration value="orange"/>
+                          <xs:enumeration value="yellow"/>
+                          <xs:enumeration value="green"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <!--type="xs:string" minOccurs="0" /-->
+                    <xs:element name="transparency">
+                      <!-- restrictions to transparency-->
+                      <xs:simpleType>
+                        <xs:restriction base="xs:double">
+                          <xs:minInclusive value= "0" />
+                          <xs:maxInclusive value= "100" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <!--type="xs:string" minOccurs="0" /-->
+                    <xs:element name="sides">
+                      <!-- restrictions to sides-->
+                      <xs:simpleType>
+                        <xs:restriction base="xs:int">
+                          <xs:minInclusive value= "4" />
+                          <xs:maxInclusive value= "1000" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <!--type="xs:string" minOccurs="0" /-->
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="preciousness" type="xs:boolean" />
+            <xs:attribute name="name">
+              <!-- restrictions to origin-->
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="[A-Z]([a-z])+"/>
+                  <xs:maxLength value="20"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
