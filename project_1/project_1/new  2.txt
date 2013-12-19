@@ -1,0 +1,15 @@
+list.add(new CreditChoise("safs", 0, 2, true, true, true, true, 94, 12, false));
+list.add(new CreditChoise("sadfasdf", 2, 2, true, false, false, false, 79, 12, true));
+list.add(new CreditChoise("ertw", 0, 2, true, true, false, false, 99, 14, false));
+list.add(new CreditChoise("fgdf", 0, 2, true, false, false, false, 8, 12, true));
+list.add(new CreditChoise("fghdfh", 0, 2, true, true, false, true, 27, 19, true));
+list.add(new CreditChoise("tyeyer", 1, 1, true, false, false, true, 64, 12, true));
+list.add(new CreditChoise("rtyer", 0, 1, false, false, false, false, 99, 11, true));
+list.add(new CreditChoise("ghgdh", 2, 2, true, true, false, true, 17, 11, true));
+list.add(new CreditChoise("dfgh", 1, 2, false, false, true, true, 58, 17, false));
+list.add(new CreditChoise("gfhd", 1, 1, false, true, true, false, 17, 18, true));
+list.add(new CreditChoise("hjgk", 2, 0, false, true, false, true, 81, 12, false));
+list.add(new CreditChoise("gh", 0, 1, false, false, false, true, 23, 14, true));
+list.add(new CreditChoise("bcvn", 0, 1, true, true, false, false, 22, 11, true));
+list.add(new CreditChoise("eygbvc", 1, 1, true, true, false, true, 41, 13, true));
+list.add(new CreditChoise("hdghjfvbc", 0, 0, false, true, false, false, 15, 12, true));
